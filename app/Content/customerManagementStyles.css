@@ -1,5 +1,9 @@
 ﻿body {
     padding: 65px;
+    background-image: url('/Content/images/index.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
 }
 
 .view {
