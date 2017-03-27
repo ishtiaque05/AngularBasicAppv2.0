@@ -10,6 +10,11 @@ app.config(function ($routeProvider) {
                 controller: 'CustomersController',
                 templateUrl: '/partials/customers.html'
             })
+        .when('/customers',
+            {
+                controller: 'CustomersController',
+                templateUrl: '/partials/customers.html'
+            })
         //Define a route that has a route parameter in it (:customerID)
         .when('/customerorders/:customerID',
             {
