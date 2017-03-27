@@ -1,8 +1,10 @@
+# `AngularJS Basic App` - Customer Manager
+
 This is a basic Angular JS app that displays a customer manager application. Done by following a tutotial called "AngularJS in 60 minutes by Dan Wahlin".
 
 
 
-# `angular-seed` — the seed for AngularJS apps
+##`angular-seed` — the seed for AngularJS apps
 
 The seed contains a sample AngularJS application and is preconfigured to install the Angular
 framework and a bunch of development and testing tools for instant web development gratification.
@@ -13,6 +15,9 @@ The seed app doesn't do much, just shows how to wire two controllers and views t
 ## Getting Started
 
 Clone this repository to your local directory.
+```
+git clone git@github.com:raafa16/AngularBasicAppv2.0.git
+```
 
 
 Browse to the local directory. We have preconfigured `npm` to automatically run `bower` so we can simply do:
