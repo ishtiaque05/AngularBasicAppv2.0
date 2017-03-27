@@ -5,7 +5,7 @@ var app = angular.module('customersApp', ['ngRoute']);
 //This configures the routes and associates each route with a view and a controller
 app.config(function ($routeProvider) {
     $routeProvider
-        .when('/customers',
+        .when('/',
             {
                 controller: 'CustomersController',
                 templateUrl: '/partials/customers.html'
@@ -16,7 +16,6 @@ app.config(function ($routeProvider) {
                 controller: 'CustomerOrdersController',
                 templateUrl: '/partials/customerOrders.html'
             })
-        //Define a route that has a route parameter in it (:customerID)
         .when('/orders',
             {
                 controller: 'OrdersController',

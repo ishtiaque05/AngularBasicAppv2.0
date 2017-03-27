@@ -2,8 +2,6 @@
 //The $scope is ultimately bound to the customers view
 app.controller('CustomersController', function ($scope, customersService) {
 
-    //I like to have an init() for controllers that need to perform some initialization. Keeps things in
-    //one place...not required though especially in the simple example below
     init();
 
     function init() {
@@ -31,8 +29,7 @@ app.controller('CustomerOrdersController', function ($scope, $routeParams, custo
     $scope.customer = {};
     $scope.ordersTotal = 0.00;
 
-    //I like to have an init() for controllers that need to perform some initialization. Keeps things in
-    //one place...not required though especially in the simple example below
+
     init();
 
     function init() {
@@ -50,8 +47,7 @@ app.controller('CustomerOrdersController', function ($scope, $routeParams, custo
 app.controller('OrdersController', function ($scope, customersService) {
     $scope.customers = [];
 
-    //I like to have an init() for controllers that need to perform some initialization. Keeps things in
-    //one place...not required though especially in the simple example below
+   
     init();
 
     function init() {
@@ -81,7 +77,6 @@ app.controller('OrderChildController', function ($scope) {
 
     function init() {
         //Calculate grand total
-        //Handled at this level so we don't duplicate it across parent controllers
         if ($scope.customer && $scope.customer.orders) {
             var total = 0.00;
             for (var i = 0; i < $scope.customer.orders.length; i++) {
